@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @color_swatch %>
+
+<div>
+  <%= link_to "Edit this color swatch", edit_color_swatch_path(@color_swatch) %> |
+  <%= link_to "Back to color swatches", color_swatches_path %>
+
+  <%= button_to "Destroy this color swatch", @color_swatch, method: :delete %>
+</div>

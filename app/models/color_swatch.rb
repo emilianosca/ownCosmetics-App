@@ -1,0 +1,2 @@
+class ColorSwatch < ApplicationRecord
+end

@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>OwnAppV01</title>
+    <title>Own Cosmetics App</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag "content.css" %>
+    <%= stylesheet_link_tag "footer.css" %>
+
+    
   </head>
 
+
+  <header> 
+    <h1 style="color:black;">This is header </h1>
+  </header>
+
   <body>
-    <%= yield %>
+      <%= yield %>
   </body>
+
+
+
+
+  <footer>
+    <div class="contact-exclamation">
+    <h3>¡Síguenos en redes sociales!</h3>
+    </div>
+
+
+    <div class="two-column-layout">
+
+    <div class="main-contact">
+        <h3>Contacto</h3>
+        <p>Creamos una cosmética con consciencia, ya que todos nuestros productos son formulados con los estándares de calidad de clean beauty. Queremos crear los mejores productos y de calidad. Contáctanos.        </p>
+        <div class="email-contact">
+            email hello@owncosmetics.mx
+        </div>
+        <div class="phone-contact">
+            81 1301 0275
+        </div>
+    </div>
+
+    <div class="subscribe-newsletter">
+        <form id="singular-form">
+            <h3>Suscríbete a nuestro newsletter</h3>
+            <div class="email-input">
+                <input type="text" placeholder="Tu correo electrónico" id="email">
+            </div>
+            <div class="email-input">
+                <button type="button" class="addbut1">Suscribir</button>
+            </div>
+        </form>
+    </div>
+
+    </div>
+  <footer>
+
+
 </html>

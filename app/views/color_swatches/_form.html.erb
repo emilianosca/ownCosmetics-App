@@ -1,0 +1,37 @@
+<%= form_with(model: color_swatch) do |form| %>
+  <% if color_swatch.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(color_swatch.errors.count, "error") %> prohibited this color_swatch from being saved:</h2>
+
+      <ul>
+        <% color_swatch.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :idFormula, style: "display: block" %>
+    <%= form.number_field :idFormula %>
+  </div>
+
+  <div>
+    <%= form.label :idUser, style: "display: block" %>
+    <%= form.number_field :idUser %>
+  </div>
+
+  <div>
+    <%= form.label :colorName, style: "display: block" %>
+    <%= form.text_field :colorName %>
+  </div>
+
+  <div>
+    <%= form.label :colorHexa, style: "display: block" %>
+    <%= form.text_field :colorHexa %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
